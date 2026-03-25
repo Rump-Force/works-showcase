@@ -495,6 +495,13 @@
 	opacity: 1;
 }
 
+.terminal__line {
+	margin-bottom: 8px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
 
 
 
@@ -511,6 +518,10 @@
 
 	.card--chat {
 		grid-column: span 1;
+	}
+
+	.terminal__input-group {
+		flex-direction: column;
 	}
 }
 
