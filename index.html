@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__layout">
+					<div class="header__info">
+						<div class="logo header__logo">
+							<a href="index.html" class="logo__link">
+								<img class="logo__img" src="images/img/logo.png" alt="Logo" />
+								<div class="logo__decor">
+									<svg viewBox="0 0 100 100">
+										<circle
+											cx="50"
+											cy="50"
+											r="48"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1"
+											stroke-dasharray="10 5 20 5 5 10"
+											class="spin"
+										></circle>
+										<circle
+											cx="50"
+											cy="50"
+											r="42"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="0.5"
+											stroke-dasharray="30 10"
+											class="spin"
+										></circle>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="header__inner">
+							<div class="header__time">
+								<div class="header__time-text">sst:</div>
+								<div class="header__time-num" id="clock"></div>
+							</div>
+							<div class="header__line"></div>
+							<div class="header__status">
+								<span class="header__status-label">LATENCY:</span>
+								<span class="header__status-value">3ms</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__nav">
+						<div class="header__tabs">
+							<a href="index.html" class="header__tab">
+								<span class="tab-dot"></span>
+								<span class="tab-text">Проекты</span>
+							</a>
+							<a href="communication.html" class="header__tab">
+								<span class="tab-dot tab-dot-active"></span>
+								<span class="tab-text">Связь</span>
+							</a>
+						</div>
+						<div class="decore__line"></div>
+						<div class="header__group">
+							<button class="button header__btn-collection">
+								<svg
+									class="header__btn-collection-img"
+									width="25"
+									height="25"
+									viewBox="0 0 25 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+									<circle cx="12.5" cy="2.5" r="2.5" fill="white" />
+									<circle cx="22.5" cy="2.5" r="2.5" fill="white" />
+									<circle cx="2.5" cy="12.5" r="2.5" fill="white" />
+									<circle cx="12.5" cy="12.5" r="2.5" fill="white" />
+									<circle cx="22.5" cy="12.5" r="2.5" fill="white" />
+									<circle cx="2.5" cy="22.5" r="2.5" fill="white" />
+									<circle cx="12.5" cy="22.5" r="2.5" fill="white" />
+									<circle cx="22.5" cy="22.5" r="2.5" fill="white" />
+								</svg>
+							</button>
+							<button class="button header__btn-menu">Меню</button>
+						</div>
+					</div>
+					<nav class="menu header__menu">
+						<div class="header__menu-navigation">
+							<div class="header__menu-title">Sys.menu_root</div>
+							<button class="button header__menu-close"><i class="ri-close-line"></i></button>
+						</div>
+						<ul class="menu__items">
+							<li class="menu__item">
+								<span class="tab-dot tab-dot-active"></span>
+								<a href="index.html" class="menu__link">Проекты</a>
+							</li>
+							<li class="menu__item">
+								<span class="tab-dot tab-dot-active"></span>
+								<a href="#" class="menu__link">Навыки</a>
+							</li>
+							<li class="menu__item">
+								<span class="tab-dot tab-dot-active"></span>
+								<a href="#" class="menu__link">Опыт</a>
+							</li>
+							<li class="menu__item">
+								<span class="tab-dot tab-dot-active"></span>
+								<a href="communication.html" class="menu__link">Связь</a>
+							</li>
+							<li class="menu__item">
+								<span class="tab-dot tab-dot-active"></span>
+								<a href="web_development.html" class="menu__link">WEB-Разработка</a>
+							</li>
+						</ul>
+						<div class="header__menu-status">
+							<div class="header__menu-status-title">Status: online</div>
+							<div class="header__menu-status-ver">Version: 2.0.26</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="projects">
+			<div class="container">
+				<div class="projects__layout">
+					<div class="projects__title">Personal work</div>
+					<div class="projects__list">
+						<!-- <article class="project__card">
+							<div class="project__card-number">
+								<div class="project__card-circle circle-green circle-blue circle-purple circle-pink circle-red circle-yellow"></div>
+								<div class="project__card-index">
+									<span class="project__card-accent">[</span>
+									01
+									<span class="project__card-accent">]</span>
+								</div>
+							</div>
+							<div class="project__card-image">
+								<img src="images/img/port/Growing Beautiful Plants at Home.webp" alt="" />
+							</div>
+							<div class="project__card-group">
+								<div class="project__card-content">
+									<div class="project__card-title">Growing Beautiful Plants at Home</div>
+									<div class="project__card-date">Apr 2025</div>
+								</div>
+								<a
+									href="https://rump-force.github.io/Growing-Beautiful-Plants/"
+									class="button project__card-button card-button-green card-button-blue card-button-purple card-button-pink card-button-red card-button-yellow"
+								>
+									Open
+								</a>
+							</div>
+						</article> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="overlay"></div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__terminal">
+						<div class="footer__terminal-text">RESOLUTION: 8K</div>
+						<div class="footer__terminal-ver">UI_VERSION: 2.0.26</div>
+					</div>
+					<div class="footer__items">
+						<div class="footer__item">
+							<div class="footer__logo-name">
+								<a href="index.html">
+									ALEX
+									<span>_</span>
+									PORTFOLIO
+								</a>
+							</div>
+							<div class="footer__item-title">
+								<span class="footer__item-title-accent">[</span>
+								CONNECTION: SECURE
+								<span class="footer__item-title-accent">]</span>
+							</div>
+							<div class="footer__item-title">
+								<span class="footer__item-title-accent">[</span>
+								LOCATION: RUSSIA
+								<span class="footer__item-title-accent">]</span>
+							</div>
+							<div class="footer__item-title"></div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-subtitle">Навигация</div>
+							<div class="footer__item-nav">
+								<nav class="footer__nav">
+									<ul class="footer__nav-items">
+										<li class="footer__nav-item">
+											<a href="index.html" class="footer__nav-link">
+												<div class="footer__nav-icon">01</div>
+												<div class="footer__nav-title">Главная</div>
+											</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="index.html" class="footer__nav-link">
+												<div class="footer__nav-icon">01</div>
+												<div class="footer__nav-title">Проекты</div>
+											</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="#" class="footer__nav-link">
+												<div class="footer__nav-icon">03</div>
+												<div class="footer__nav-title">Контакты</div>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-subtitle">Терминал связи</div>
+							<div class="footer__item-title">
+								<span class="footer__item-title-accent">[</span>
+								TG: @Alexander1302313
+								<span class="footer__item-title-accent">]</span>
+							</div>
+							<div class="footer__item-title">
+								<span class="footer__item-title-accent">[</span>
+								Mail: rumpforce@gmail.com
+								<span class="footer__item-title-accent">]</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__group">
+						<div class="footer__bottom-copyright">© 2026 ALEX_PORTFOLIO. ALL RIGHTS RESERVED.</div>
+						<div class="footer__bottom-user">User_access: granted</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/work.js"></script>
+	</body>
+</html>
