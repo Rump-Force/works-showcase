@@ -41,6 +41,17 @@
 .connection {
 	padding-block: 150px;
 	background: #000;
+
+	/* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2));
+	background-size: 100% 4px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 50;
+	opacity: 0.3; */
 }
 
 .container {}
@@ -87,6 +98,23 @@
 
 .card--chat {
 	grid-column: span 2;
+	transition: border-color var(--transition-duration);
+	transition: border-color var(--transition-duration);
+	border: 1px solid transparent;
+}
+
+.card--chat:hover {
+	border-color: #00e0f03f;
+}
+
+.card--chat:focus-within {
+	border-color: #ffffff7a;
+	box-shadow: 0 0 25px rgba(255, 255, 255, 0.327);
+	/* Добавим легкое свечение для эффекта терминала */
+}
+
+.terminal__textarea:focus {
+	outline: none;
 }
 
 /* Секция левел */
@@ -304,6 +332,10 @@
 
 }
 
+.card__button label {
+	cursor: pointer;
+}
+
 .card__button-title {}
 
 .card__button-svg svg {
@@ -315,6 +347,7 @@
 .card__button:hover {
 	background: #00f0ff;
 	color: #000000;
+
 }
 
 .card__layout {
@@ -344,9 +377,10 @@
 }
 
 .card-git .card__icon {
-	border-color: #ffffff60;
-	box-shadow: 0 0 2px #fff;
+	border-color: #ffffff3c;
+			box-shadow: 0 0 15px hsla(0, 0%, 100%, 0.362);
 }
+
 
 .card-git .card__icon svg {
 	color: #fff;
@@ -431,8 +465,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 250px;
-	height: auto;
+	/* min-height: 200px; */
+	/* height: 100%; */
 }
 
 /* Группировка промпта и ввода */
@@ -464,7 +498,7 @@
 	outline: none;
 	padding: 5px 0;
 	overflow-y: hidden;
-	height: 255px;
+	height: 80px;
 	/* Прячем скролл, если будем расширять через JS */
 }
 
@@ -511,6 +545,12 @@
 	}
 }
 
+@media screen and (max-width: 850px) {
+	.connection {
+		padding-top: 250px;
+	}
+}
+
 @media screen and (min-width: 200px) and (max-width: 768px) {
 	.connection__inner {
 		grid-template-columns: repeat(1, 1fr);
@@ -525,20 +565,27 @@
 	}
 }
 
+@media screen and (max-width: 340px) {
+	@media screen and (max-width: 850px) {
+		.connection {
+			padding-top: 300px;
+		}
+	}
 
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+	/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

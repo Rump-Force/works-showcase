@@ -155,7 +155,7 @@ function renderProjects() {
 	const html = projectsData
 		.map(project => {
 			return `
-      <article class="project__card">
+      <article class="project__card animate-down">
         <div class="project__card-number">
           <div class="project__card-circle circle-${project.color}"></div>
           <div class="project__card-index">
