@@ -137,6 +137,14 @@ const projectsData = [
 		color: 'purple',
 		// Выбираем один из классов: green, blue, purple, pink, red, yellow
 	},
+	{
+		id: '17',
+		title: 'Национальная рейтинговая юридическая система',
+		date: 'May 2026',
+		image: '../images/img/port/national-rating.webp',
+		link: 'https://rump-force.github.io/National-rating-legal-system/',
+		color: 'green',
+	},
 	// {
 	// 	id: '55555555',
 	// 	title: '5555',
